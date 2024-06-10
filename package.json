@@ -1,0 +1,19 @@
+{
+  "name": "extract-untranslated",
+  "version": "0.0.1",
+  "description": "A tool to extract untranslated texts from React code for internationalization (i18n)",
+  "main": "index.js",
+  "bin": {
+    "i18nextractor": "./bin/i18n-extractor.js"
+  },
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "localization",
+    "react",
+    "babel",
+    "i18next",
+    "extract"
+  ],
+  "license": "MIT"
+}
