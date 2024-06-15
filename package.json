@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "A tool to extract untranslated texts from React code for internationalization (i18n)",
   "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "i18nextractor untsl"
+  },
   "bin": {
     "i18nextractor": "./bin/i18n-extractor.js"
   },
@@ -15,5 +19,20 @@
     "i18next",
     "extract"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "9.x",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "3.3.2",
+    "semistandard": "^17.0.0"
+  },
+  "dependencies": {
+    "cac": "^6.7.14",
+    "@babel/parser": "^7.24.4",
+    "@babel/traverse": "^7.24.1"
+
+  },
+  "repository": "https://github.com/williamChen26/i18next-extract-untranslated.git",
+  "author": "chenweimin <chenweimin@workmagic.io>"
 }
