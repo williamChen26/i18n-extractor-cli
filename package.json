@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "i18nextractor untsl"
+    "test": "i18n-extract untsl -f test/src -g tsl -g test"
   },
   "bin": {
-    "i18nextractor": "./bin/i18n-extractor.js"
+    "i18n-extract": "./bin/i18n-extractor.js"
   },
   "keywords": [
     "i18n",

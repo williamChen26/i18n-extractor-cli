@@ -15,7 +15,7 @@ export const extractor = (params) => {
     const dir = path.join(pwd, params.srcDir || 'src');
 
     const outputDir = path.join(pwd, 'locales');
-    const outputFile = path.join(outputDir, 'en.json');
+    const outputFile = path.join(outputDir, 'test.json');
 
     const fns = params.fns || ignoreFns;
 

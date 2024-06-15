@@ -33,17 +33,18 @@ To use the I18n Extractor, you can run it directly from the command line. Below 
 | Option      | Alias | Description | Default |
 | ----------- | ----- | ----------- | ------- |
 | `--file <path>`| `-f`|Specify the file path to scan|`src`|
-| `--functions <path>`| `-fns`|An array of function names that indicate text is already translated|`t i18n translate`|
+| `--function <functionName>`| `-g`|Specify one or more function names that indicate text is already translated|`['t', 'i18n', 'translate']`|
 
 To run the extractor with custom options:
 ```bash
-i18n-extract untsl --file <file-path> --functions <function-names>
+i18n-extract untsl --file <file-path> -g <function-name> -g <another-function-name>
 ```
-Replace `<file-path>` with your desired source directory path and `<function-names>` with a comma-separated list of function names.
+Replace `<file-path>` with your desired source directory path and `<function-name>` with the name of the function indicating translated text. You can use -g multiple times to input multiple function names.
+
 
 ## Output
 
-The extracted untranslated texts are saved in a JSON file located at locales/en.json by default. The structure of the JSON file maps file paths to their respective untranslated texts:
+The extracted untranslated texts are saved in a JSON file located at locales/text.json by default. The structure of the JSON file maps file paths to their respective untranslated texts:
 
 ```json
 {
